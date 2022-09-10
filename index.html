@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript study</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="simple_calculator">
+        <h1>simple calculator</h1>
+        <div class="screen">
+            <input type="text" id=display>
+        </div>
+        <label for="first number">enter your first number</label>
+        <input type="text" name="" id="n1" onkeyup="digitsOnly(this)" placeholder="Digits only permitted">
+        <br>
+        <div class="operations">
+            <button onclick="myOp('+')">+</button>
+            <button onclick="myOp('-')">-</button>
+            <button onclick="myOp('*')">x</button>
+            <button onclick="myOp('/')">/</button>
+        </div>
+        <label for="second number">enter your second number</label>
+        <input type="text" name="" placeholder="Digits only permitted"  id="n2" onkeyup="digitsOnly(this)" >
+        <button onclick="calc()">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
