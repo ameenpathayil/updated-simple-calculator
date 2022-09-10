@@ -35,6 +35,6 @@ function calc() {
 
 //digits only restrictions function
 function digitsOnly(input) {
-  var regex = /[^0-9]/gi;
+  var regex = /[^0-9.]/gi;
   input.value = input.value.replace(regex, "");
 }
